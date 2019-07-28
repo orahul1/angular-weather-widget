@@ -8,31 +8,31 @@ import { AngularWeatherWidgetService } from './angular-weather-widget.service';
 })
 export class AngularWeatherWidgetComponent implements OnInit {
   @Input() APIKEY: any;
-  @Input() height: string;
-  @Input() width: string;
-  @Input() backgroundColor: string;
-  @Input() isBoxShadow: boolean;
-  @Input() borderRadius: string;
-  @Input() locationFontSize: string;
-  @Input() locationFontColor: string;
-  @Input() status: boolean;
-  @Input() statusFontColor: string;
-  @Input() statusFontSize: String;
-  @Input() temperature: string;
-  @Input() isDegree: boolean;
-  @Input() isFahrenheit: boolean;
-  @Input() tempratureFontColor: string;
-  @Input() tempratureFontSize: string;
-  @Input() weatherImages: boolean;
-  @Input() weatherImageWidth: string;
-  @Input() weatherImageHeight: string;
-  @Input() geoLocation: boolean;
-  @Input() location: any;
-  @Input() isWind: boolean;
-  @Input() windFontColor: string;
-  @Input() windFontSize: string;
-  @Input() isWindKPH: boolean;
-  @Input() isWindMPH: boolean;
+  @Input() height: string = 'auto';
+  @Input() width: string = '280px';
+  @Input() backgroundColor: string = '#2a2828';
+  @Input() isBoxShadow: boolean = true;
+  @Input() borderRadius: string = '5px';
+  @Input() locationFontSize: string = '40px';
+  @Input() locationFontColor: string = '#fff';
+  @Input() status: boolean = true;
+  @Input() statusFontColor: string = '#fff';
+  @Input() statusFontSize: String = '18px';
+  @Input() temperature: Boolean = true;
+  @Input() isDegree: boolean = true;
+  @Input() isFahrenheit: boolean = false;
+  @Input() tempratureFontColor: string = '#fff';
+  @Input() tempratureFontSize: string = '80px';
+  @Input() weatherImages: boolean = true;
+  @Input() weatherImageWidth: string = '100px';
+  @Input() weatherImageHeight: string = '100px';
+  @Input() geoLocation: boolean = true;
+  @Input() location: any = '';
+  @Input() isWind: boolean = true;
+  @Input() windFontColor: string = '#fff';
+  @Input() windFontSize: string = '20px';
+  @Input() isWindKPH: boolean = true;
+  @Input() isWindMPH: boolean = false;
 
   weatherDetails;
   locationDetails;
@@ -68,7 +68,7 @@ export class AngularWeatherWidgetComponent implements OnInit {
         this.weatherDetails = response.current;
         this.locationDetails = response.location;
       }, err => {
-        console.log(err);
+        console.log(err.error.error.message);
       })
     } else {
       console.log('Invalid APIKEY');
