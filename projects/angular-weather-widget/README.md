@@ -45,7 +45,7 @@ import { CommonModule } from '@angular/common';
 Add the following component tag in you template (no properties)
 ```html
 <angular-weather-widget
-  [APIKEY]="APIKEY">
+  [APIKEY]="'APIKEY'">
 </angular-weather-widget>
 
 ```
