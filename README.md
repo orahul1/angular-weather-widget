@@ -60,7 +60,7 @@ Full properties
   [status]="true"
   [statusFontColor]="'#fff'"
   [statusFontSize]="'18px'"
-  [temperature]="'true'"
+  [temperature]="true"
   [isDegree]="true"
   [isFahrenheit]="false"
   [tempratureFontColor]="'#fff'"
