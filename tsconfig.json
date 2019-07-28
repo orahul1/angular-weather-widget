@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-weather-widget": [
+        "dist/angular-weather-widget"
+      ],
+      "angular-weather-widget/*": [
+        "dist/angular-weather-widget/*"
+      ]
+    }
   }
 }

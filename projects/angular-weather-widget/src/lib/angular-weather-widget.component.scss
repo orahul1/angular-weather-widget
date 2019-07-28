@@ -1,0 +1,23 @@
+/* common styles */
+
+p{
+  padding: 0;
+  margin: 0;
+  word-break: break-all;
+}
+
+/* main styles */
+
+.container{
+  padding: 20px;
+  font-family: 'roboto';
+  .temp{
+    display: flex;
+  }
+  .details{
+    display: flex;
+    .wind{
+      padding-left: 10px;
+    }
+  }
+}

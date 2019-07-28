@@ -1,0 +1,1 @@
+export const API = 'http://api.apixu.com/v1/current.json?key=';
