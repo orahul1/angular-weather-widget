@@ -22,14 +22,14 @@ Angular 2+ Weather Widget component for web applications. Easy and Highly custom
 Import `AngularWeatherWidgetModule` into `NgModule` in `app.module.ts`. Angular's `HttpClientModule` and `CommonModule` is also required.
 ```js
 import { AngularWeatherWidgetModule } from 'angular2-weather-widget';
-import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
   // ...
   imports: [
     AngularWeatherWidgetModule,
-    FormsModule,
+    HttpClientModule,
     CommonModule
   ]
   // ...
