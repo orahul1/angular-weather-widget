@@ -60,7 +60,7 @@ Full properties
   [status]="true"
   [statusFontColor]="'#fff'"
   [statusFontSize]="'18px'"
-  [temperature]="'true'"
+  [temperature]="true"
   [isDegree]="true"
   [isFahrenheit]="false"
   [tempratureFontColor]="'#fff'"
@@ -116,7 +116,6 @@ The following list of properties are supported by the component.
 - Run `npm install`
 - Run `ng serve` for a dev server
 - Navigate to `http://localhost:4200/`
- The app will automatically reload if you change any of the source files.
 
 ## License
 MIT License.
