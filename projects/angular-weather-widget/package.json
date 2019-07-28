@@ -1,8 +1,19 @@
 {
-  "name": "angular-weather-widget",
-  "version": "0.0.1",
+  "name": "angular2-weather-widget",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^7.1.0",
     "@angular/core": "^7.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orahul1/angular-weather-widget"
+  },
+  "keywords": ["angular", "angular 2", "angular 2 weather", "angular weather widget", "angular 2 weather widget", "angular 8 weather widget","angular 8 weather"],
+  "author": "Rahul Raveendran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orahul1/angular-weather-widget/issues"
+  },
+  "homepage": "https://github.com/orahul1/angular-weather-widget"
 }
