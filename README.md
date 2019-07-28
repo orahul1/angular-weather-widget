@@ -84,10 +84,10 @@ The following list of properties are supported by the component.
 
 | Property         |Type    | Description            | Default Value |
 |:--- |:--- |:--- |:--- |
-| APIKEY | String | API key from APIUX | 'APIKEY' |
-| width | String | Width of the weather card  | '280px' |
+| APIKEY | String | API key from APIUX | APIKEY |
+| width | String | Width of the weather card  | 280px |
 | height | String | Height of the weather card | auto |
-| backgroundColor | String | Background color of the weather card | '#2a2828' |
+| backgroundColor | String | Background color of the weather card | #2a2828 |
 | isBoxShadow | Boolean | Box shadow of the weather card | true |
 | borderRadius | String | Border-radius of the weather card | 5px |
 | locationFontSize | String | Font size of the location text | 40px |
