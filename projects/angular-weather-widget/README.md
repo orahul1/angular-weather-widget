@@ -5,6 +5,10 @@
 
 Angular 2+ Weather Widget component for web applications. Easy and Highly customisable.
 
+
+![alt text](https://i.ibb.co/6txrsHw/weather-card.jpg)
+
+
 <!-- [Demos / Examples](link). -->
 
 ## Getting Started
@@ -49,13 +53,13 @@ Add the following component tag in you template (no properties)
 Full properties
 ```html
 <angular-weather-widget
-  [APIKEY]="APIKEY"
-  [width]="'280px'"
+  [APIKEY]="'APIKEY'"
+  [width]="'380px'"
   [height]="'auto'"
-  [backgroundColor]="'#000'" 
+  [backgroundColor]="'green'" 
   [isBoxShadow]="true"
   [borderRadius]="'5px'"
-  [locationFontSize]="'40px'"
+  [locationFontSize]="'35px'"
   [locationFontColor]="'#fff'"
   [status]="true"
   [statusFontColor]="'#fff'"
@@ -64,17 +68,17 @@ Full properties
   [isDegree]="true"
   [isFahrenheit]="false"
   [tempratureFontColor]="'#fff'"
-  [tempratureFontSize]="'80px'"
+  [tempratureFontSize]="'75px'"
   [weatherImages]="true"
-  [weatherImageWidth]="'100px'"
-  [weatherImageHeight]="'100px'"
+  [weatherImageWidth]="'110px'"
+  [weatherImageHeight]="'110px'"
   [geoLocation]="true"
   [location]="''"
   [isWind]="true"
   [isWindKPH]="true"
   [isWindMPH]="false"
   [windFontColor]="'#fff'"
-  [windFontSize]="'20px'">
+  [windFontSize]="'17px'">
 </angular-weather-widget>
 ```
 
@@ -84,10 +88,10 @@ The following list of properties are supported by the component.
 
 | Property         |Type    | Description            | Default Value |
 |:--- |:--- |:--- |:--- |
-| APIKEY | String | API key from APIUX | 'APIKEY' |
-| width | String | Width of the weather card  | '280px' |
+| APIKEY | String | API key from APIUX | APIKEY |
+| width | String | Width of the weather card  | 280px |
 | height | String | Height of the weather card | auto |
-| backgroundColor | String | Background color of the weather card | '#2a2828' |
+| backgroundColor | String | Background color of the weather card | #2a2828 |
 | isBoxShadow | Boolean | Box shadow of the weather card | true |
 | borderRadius | String | Border-radius of the weather card | 5px |
 | locationFontSize | String | Font size of the location text | 40px |
