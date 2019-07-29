@@ -111,8 +111,8 @@ The following list of properties are supported by the component.
 | isWind | Boolean | Wind of the location | true |
 | windFontSize | String | Font size of the wind text | 20px |
 | windFontColor | String |  Color of the wind text | #fff |
-| isWindKPH | Boolean | Wind measure foremat in KPH | true |
-| isWindMPH | Boolean | Wind measure foremat in MPH | false |
+| isWindKPH | Boolean | Wind measure format in KPH | true |
+| isWindMPH | Boolean | Wind measure format in MPH | false |
 
 ## Run locally
 - Clone the repository or downlod the .zip,.tar files.
