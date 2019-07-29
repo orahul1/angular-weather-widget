@@ -120,5 +120,9 @@ The following list of properties are supported by the component.
 - Run `ng serve` for a dev server
 - Navigate to `http://localhost:4200/`
 
+##TODOS
+- Precise location of the user when geoLocation is enabled.
+- More weather options.
+
 ## License
 MIT License.
