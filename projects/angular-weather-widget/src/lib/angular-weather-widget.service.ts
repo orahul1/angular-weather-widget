@@ -11,6 +11,6 @@ export class AngularWeatherWidgetService {
   constructor(public http: HttpClient) { }
 
   getWeatherDetails(location, APIKEY) : Observable <any> {
-   return this.http.get(API + APIKEY + '&q=' + location);
+   return this.http.get(API + APIKEY + '&query=' + location);
   }
 }

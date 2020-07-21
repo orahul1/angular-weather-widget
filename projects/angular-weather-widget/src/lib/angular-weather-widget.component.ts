@@ -10,7 +10,7 @@ export class AngularWeatherWidgetComponent implements OnInit {
   @Input() APIKEY: any;
   @Input() height: string = 'auto';
   @Input() width: string = '280px';
-  @Input() backgroundColor: string = '#2a2828';
+  @Input() backgroundColor: string = 'rgb(150 180 228)';
   @Input() isBoxShadow: boolean = true;
   @Input() borderRadius: string = '5px';
   @Input() locationFontSize: string = '40px';
@@ -20,7 +20,7 @@ export class AngularWeatherWidgetComponent implements OnInit {
   @Input() statusFontSize: String = '18px';
   @Input() temperature: Boolean = true;
   @Input() isDegree: boolean = true;
-  @Input() isFahrenheit: boolean = false;
+  // @Input() isFahrenheit: boolean = false;
   @Input() tempratureFontColor: string = '#fff';
   @Input() tempratureFontSize: string = '80px';
   @Input() weatherImages: boolean = true;
@@ -32,7 +32,7 @@ export class AngularWeatherWidgetComponent implements OnInit {
   @Input() windFontColor: string = '#fff';
   @Input() windFontSize: string = '20px';
   @Input() isWindKPH: boolean = true;
-  @Input() isWindMPH: boolean = false;
+  // @Input() isWindMPH: boolean = false;
 
   weatherDetails;
   locationDetails;
@@ -65,6 +65,7 @@ export class AngularWeatherWidgetComponent implements OnInit {
   getWeather() {
     if (this.APIKEY) {
       this.ws.getWeatherDetails(this.location, this.APIKEY).subscribe(response => {
+        console.log(response)
         this.weatherDetails = response.current;
         this.locationDetails = response.location;
       }, err => {

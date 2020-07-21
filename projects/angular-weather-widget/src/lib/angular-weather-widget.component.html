@@ -4,18 +4,18 @@
     <p [ngStyle]="{'font-size': locationFontSize, 'color': locationFontColor}">{{locationDetails?.name}}</p>
   </div>
   <div class="status" *ngIf="status">
-    <p [ngStyle]="{'color': statusFontColor, 'font-size': statusFontSize}">{{weatherDetails?.condition.text}}</p>
+    <p [ngStyle]="{'color': statusFontColor, 'font-size': statusFontSize}">{{weatherDetails?.weather_descriptions}}</p>
   </div>
   <div class="temp" *ngIf="temperature">
-    <p *ngIf="isDegree" [ngStyle]="{'color': tempratureFontColor, 'font-size': tempratureFontSize}">{{weatherDetails?.temp_c}}°c</p>
-    <p *ngIf="isFahrenheit" [ngStyle]="{'color': tempratureFontColor, 'font-size': tempratureFontSize}">{{weatherDetails?.temp_f}}°F</p>
+    <p *ngIf="isDegree" [ngStyle]="{'color': tempratureFontColor, 'font-size': tempratureFontSize}">{{weatherDetails?.temperature}}°c</p>
+<!--     <p *ngIf="isFahrenheit" [ngStyle]="{'color': tempratureFontColor, 'font-size': tempratureFontSize}">{{weatherDetails?.temp_f}}°F</p> -->
     <div class="weather-images" *ngIf="weatherImages">
-      <img [ngStyle]="{'width': weatherImageWidth, 'height': weatherImageHeight, 'color': '#fff'}" alt="weather-icon" src="{{weatherDetails?.condition.icon}}" />
+      <img [ngStyle]="{'width': weatherImageWidth, 'height': weatherImageHeight, 'color': '#fff'}" alt="weather-icon" src="{{weatherDetails?.weather_icons[0]}}" />
     </div>
   </div>
   <div class="details" *ngIf="isWind">
     <p [ngStyle]="{'color': windFontColor, 'font-size': windFontSize}">Wind</p>
-    <p class="wind" *ngIf="isWindKPH" [ngStyle]="{'color': windFontColor, 'font-size': windFontSize}">{{weatherDetails?.wind_kph}} KPH</p>
-    <p class="wind" *ngIf="isWindMPH" [ngStyle]="{'color': windFontColor, 'font-size': windFontSize}">{{weatherDetails?.wind_mph}} MPH</p>
+    <p class="wind" *ngIf="isWindKPH" [ngStyle]="{'color': windFontColor, 'font-size': windFontSize}">{{weatherDetails?.wind_speed}} KPH</p>
+<!--     <p class="wind" *ngIf="isWindMPH" [ngStyle]="{'color': windFontColor, 'font-size': windFontSize}">{{weatherDetails?.wind_mph}} MPH</p> -->
   </div>
 </div>
