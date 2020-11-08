@@ -4,9 +4,10 @@
 [![license](https://img.shields.io/github/license/cuppalabs/angular2-weather-widget.svg)](https://www.npmjs.com/package/angular2-weather-widget) -->
 
 Angular 2+ Weather Widget component for web applications. Easy and Highly customisable.
+[Stackblitz example](https://stackblitz.com/edit/angular-weather-widget-demo?file=src/app/app.component.html) (need API key)
 
 
-![alt text](https://i.ibb.co/6txrsHw/weather-card.jpg)
+![alt text](https://i.ibb.co/NjQYNqp/card.png)
 
 
 <!-- [Demos / Examples](link). -->
@@ -40,7 +41,7 @@ import { CommonModule } from '@angular/common';
 })
 ```
 
-- We are using "weatherstack" weather api to get weather details so [SIGNUP](https://weatherstack.com/signup/free) and genereate api key for your project.
+- We are using "openweathermap" api to get weather details so [SIGNUP](https://home.openweathermap.org/users/sign_in) and genereate api key for your project.
 
 Add the following component tag in you template (no properties)
 ```html
@@ -73,8 +74,10 @@ Full properties
   [geoLocation]="true"
   [location]="''"
   [isWind]="true"
-  [windFontColor]="'#fff'"
-  [windFontSize]="'17px'">
+  [windFontColor]="'#fff'" 
+  [windFontSize]="'17px'"
+  [humidityFontColor]="'#fff'" 
+  [humidityFontSize]="'17px'">
 </angular-weather-widget>
 ```
 
@@ -106,6 +109,8 @@ The following list of properties are supported by the component.
 | isWind | Boolean | Wind of the location | true |
 | windFontSize | String | Font size of the wind text | 20px |
 | windFontColor | String |  Color of the wind text | #fff |
+| humidityFontColor | String | Font size of the humidity text | 20px |
+| humidityFontSize | String |  Color of the humidity text | #fff |
 
 ## Run locally
 - Clone the repository or downlod the .zip,.tar files.
