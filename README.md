@@ -5,6 +5,7 @@
 
 Angular 2+ Weather Widget component for web applications. Easy and Highly customisable.
 
+
 ![alt text](https://i.ibb.co/6txrsHw/weather-card.jpg)
 
 
@@ -39,7 +40,7 @@ import { CommonModule } from '@angular/common';
 })
 ```
 
-- We are using APIUX weather api to get weather details so [SIGNUP](https://www.apixu.com/signup.aspx) and genereate api key for your project.
+- We are using "weatherstack" weather api to get weather details so [SIGNUP](https://weatherstack.com/signup/free) and genereate api key for your project.
 
 Add the following component tag in you template (no properties)
 ```html
@@ -64,8 +65,6 @@ Full properties
   [statusFontColor]="'#fff'"
   [statusFontSize]="'18px'"
   [temperature]="true"
-  [isDegree]="true"
-  [isFahrenheit]="false"
   [tempratureFontColor]="'#fff'"
   [tempratureFontSize]="'75px'"
   [weatherImages]="true"
@@ -74,8 +73,6 @@ Full properties
   [geoLocation]="true"
   [location]="''"
   [isWind]="true"
-  [isWindKPH]="true"
-  [isWindMPH]="false"
   [windFontColor]="'#fff'"
   [windFontSize]="'17px'">
 </angular-weather-widget>
@@ -101,8 +98,6 @@ The following list of properties are supported by the component.
 | temperature | Boolean | Temperature of the location | true |
 | tempratureFontSize | String | Font size of the temperature text | 80px |
 | tempratureFontColor | String |  Color of the temperature text | #fff |
-| isDegree | Boolean | Temperature measure format in Degree | true |
-| isFahrenheit | Boolean | Temperature measure format in Fahrenheit  | false |
 | weatherImages | Boolean | Weather icon | true |
 | weatherImageWidth | String | Weather icon width | 100px |
 | weatherImageHeight | String | Weather icon height | 100px |
@@ -111,18 +106,12 @@ The following list of properties are supported by the component.
 | isWind | Boolean | Wind of the location | true |
 | windFontSize | String | Font size of the wind text | 20px |
 | windFontColor | String |  Color of the wind text | #fff |
-| isWindKPH | Boolean | Wind measure format in KPH | true |
-| isWindMPH | Boolean | Wind measure format in MPH | false |
 
 ## Run locally
 - Clone the repository or downlod the .zip,.tar files.
 - Run `npm install`
 - Run `ng serve` for a dev server
 - Navigate to `http://localhost:4200/`
-
-## TODOS
-- Precise location of the user when geoLocation is enabled.
-- More weather options.
 
 ## License
 MIT License.
