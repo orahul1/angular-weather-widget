@@ -1,1 +1,1 @@
-export const API = 'http://api.weatherstack.com/current?access_key=';
+export const API = 'https://api.openweathermap.org/data/2.5/weather?';

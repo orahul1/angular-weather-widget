@@ -13,9 +13,12 @@ p{
   font-family: 'roboto';
   .temp{
     display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
   }
   .details{
     display: flex;
+    margin-bottom: 5px;
     .wind{
       padding-left: 10px;
     }

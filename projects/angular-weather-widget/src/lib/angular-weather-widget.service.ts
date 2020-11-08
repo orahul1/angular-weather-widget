@@ -10,7 +10,11 @@ export class AngularWeatherWidgetService {
 
   constructor(public http: HttpClient) { }
 
-  getWeatherDetails(location, APIKEY) : Observable <any> {
-   return this.http.get(API + APIKEY + '&query=' + location);
+  getWeatherDetails(isGeoLocation, location, APIKEY) : Observable <any> {
+    if(isGeoLocation){
+      return this.http.get(`${API}${location}&units=imperial&appid=${APIKEY}`);
+    }else{
+      return this.http.get(`${API}q=${location}&units=imperial&appid=${APIKEY}`);
+    }
   }
 }

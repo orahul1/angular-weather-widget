@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularWeatherWidgetModule } from '../../projects/angular-weather-widget/src/lib/angular-weather-widget.module';
 
 import { AppComponent } from './app.component';
+import { AngularWeatherWidgetModule } from '../../projects/angular-weather-widget/src/public_api';
 
 @NgModule({
   declarations: [
